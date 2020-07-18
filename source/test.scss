@@ -1,0 +1,37 @@
+$background-color: red;
+
+$spritesheet: SVGSpriteMap("../assets/svg-sprite/**/*.svg");
+.sprite {
+  background-image: $spritesheet;
+  
+  background-size: SVGSpriteWidth($spritesheet) SVGSpriteHeight($spritesheet)
+} 
+
+.names {
+  --list: #{SVGSpriteNames($spritesheet)};
+}
+
+.svg-width {
+  width: SVGFileWidth($spritesheet, 'circle');
+}
+
+.svg-height {
+  height: SVGFileHeight($spritesheet, 'vet');
+}
+
+.svg-position {
+  background-position: SVGFilePosition($spritesheet, 'circle','absolute');
+}
+
+.svg-sprite {
+  background-image: $spritesheet;
+  background-size: SVGSpriteWidth($spritesheet) SVGSpriteHeight($spritesheet);
+  background-repeat: no-repeat;
+}
+
+.svg-circle {
+  width: SVGFileWidth($spritesheet, 'circle');
+  height: SVGFileHeight($spritesheet, 'circle');
+  background-position: SVGFilePosition($spritesheet, 'circle', 'relative');
+}
+// $spriteItems: SVGSpriteNames($spritesheet);
