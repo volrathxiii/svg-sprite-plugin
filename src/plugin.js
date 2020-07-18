@@ -7,7 +7,7 @@ const webpack = require('webpack')
  * @param {String} svgCompilePath Directory path where spritesheet will be stored
  * @example
  * // webpack.config.js
-const SVGSpriteSheetPlugin = require('./src/plugin');
+const SVGSpriteSheetPlugin = require('webpack-sass-svg');
 
 module.exports = {
   module: {

@@ -16,7 +16,7 @@ functions to automatically generate SVG spritesheet.
 **Example**  
 ```js
 // webpack.config.js
-const SVGSpriteSheetPlugin = require('./src/plugin');
+const SVGSpriteSheetPlugin = require('webpack-sass-svg');
 
 module.exports = {
   module: {
