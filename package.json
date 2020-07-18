@@ -1,5 +1,5 @@
 {
-  "name": "svg-sprite-plugin",
+  "name": "webpack-sass-svg",
   "version": "0.1.0",
   "description": "",
   "main": "src/plugin.js",

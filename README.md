@@ -7,7 +7,7 @@ A `webpack`/`sass-loader` plugin that provides SASS functions to automatically g
 You can install the package using `npm` or you can also clone this package.
 ### Install using npm
 ```javascript
-npm install --save-dev svg-sprite-plugin
+npm install --save-dev webpack-sass-svg
 ```
 ### Add to webpack
 Depending on your project setup, you can either add the following to your `package.json` or `webpack.config.js`. 
@@ -15,7 +15,7 @@ Depending on your project setup, you can either add the following to your `packa
 _This requires you to have installed and use `sass-loader`._
 
 ```javascript
-const SVGSpriteSheetPlugin = require('svg-sprite-plugin');
+const SVGSpriteSheetPlugin = require('webpack-sass-svg');
 module.exports = {
   // ... other config
   module: {
