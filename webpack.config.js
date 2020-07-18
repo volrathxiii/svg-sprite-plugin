@@ -32,7 +32,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
     }),
-    new SVGSpriteSheetPlugin(path.join(__dirname, 'svgs'))
+    new SVGSpriteSheetPlugin('svgs')
   ],
   mode: 'development'
 };
